@@ -1,4 +1,4 @@
-# 🩺 csv-doctor
+#  csv-doctor
 
 ![tests](https://github.com/YOUR_USERNAME/csv-doctor/actions/workflows/tests.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
@@ -8,7 +8,7 @@
 
 Real-world CSV exports are full of empty rows, duplicates, extra spaces, numbers like `"1,200"` or `"$350"`, and dates in mixed formats. These cause crashes and wrong results in scripts. `csv-doctor` diagnoses them and saves a clean copy.
 
-## ✨ What it fixes
+##  What it fixes
 
 | Problem | Example | Fix |
 |---|---|---|
@@ -19,7 +19,7 @@ Real-world CSV exports are full of empty rows, duplicates, extra spaces, numbers
 | Mixed date formats | `2026-01-15`, `01/20/2026` | Converted to real dates |
 | Invalid values | `"abc"`, `"not a date"` | Reported and set to empty |
 
-## 🚀 Quick start
+##  Quick start
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/csv-doctor.git
@@ -49,7 +49,7 @@ Total issues: 6
 python -m csv_doctor sample_data/messy_sales.csv -n amount -d date -o cleaned.csv
 ```
 
-## 🐍 Use it in Python
+##  Use it in Python
 
 ```python
 import pandas as pd
@@ -61,7 +61,7 @@ cleaned, report = clean(df, number_cols=["amount"], date_cols=["date"])
 print(report.summary())
 ```
 
-## 🧪 Tests
+##  Tests
 
 ```bash
 pip install -r requirements-dev.txt
@@ -70,7 +70,7 @@ pytest -v
 
 Tests run automatically on every push with GitHub Actions (Python 3.10 to 3.12).
 
-## 📁 Project structure
+##  Project structure
 
 ```
 csv-doctor/
@@ -82,13 +82,13 @@ csv-doctor/
 └── sample_data/       # example messy CSV
 ```
 
-## 🗺️ Ideas for the future
+##  Ideas for the future
 
 - [ ] Detect and fix wrong text encodings
 - [ ] Support Excel (`.xlsx`) files
 - [ ] Auto-detect number and date columns
 
-## 💼 Need help with your Python code?
+##  Need help with your Python code?
 
 I fix bugs and build scripts like this one. [Hire me on Fiverr](https://www.fiverr.com/YOUR_FIVERR_USERNAME).
 
