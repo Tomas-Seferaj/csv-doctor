@@ -1,0 +1,8 @@
+order_id,customer,amount,date
+1001,  Arben ,"1,200",2026-01-15
+1002,Elira,$350,01/20/2026
+,,,
+1003,Dritan,abc,2026-02-03
+1001,Arben,"1,200",2026-01-15
+1004,Mira,  80 ,not a date
+1005,Besnik,420,2026-03-10
